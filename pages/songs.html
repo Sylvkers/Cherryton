@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href='../favicon/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js.js" defer></script>
+    <title>Songs</title>
+</head>
+
+<body id="songs-body">
+
+    <audio id="Dixie">
+        <source src="../music/Dixie.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Rider">
+        <source src="../music/Rider.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Adventure">
+        <source src="../music/Adventure.mp3" type="audio/mpeg">
+    </audio>
+
+    <header id="songs-header">
+        <nav id="navbar">
+            <a id="cherryton" href="../index.html">Cherryton</a>
+            <a id="villager" href="/pages/villager.html">Villagers</a>
+            <a id="song" href="/pages/songs.html">Songs</a>
+        </nav>
+    </header>
+
+    <h1>Songs</h1>
+
+
+    <div id="songs">
+
+        <div class="song">
+            <img class="img-songs" src="../images/cover-dixie.png" alt="K.K. Dixie cover">
+            <p>K.K. Dixie</p>
+            <input id="dixiePlay" type="image" src="../images/play-button.png" onclick="play('dixie')" alt="Play Dixie">
+            <input id="dixiePause" type="image" src="../images/pause.png" onclick="pause('dixie')" alt="Pause Dixie">
+
+        </div>
+
+        <div class="song">
+            <img class="img-songs" src="../images/cover-rider.png" alt="Go K.K. Rider cover">
+            <p>Go K.K. Rider</p>
+            <input id="riderPlay" type="image" src="../images/play-button.png" onclick="play('rider')" alt="Play Rider">
+            <input id="riderPause" type="image" src="../images/pause.png" onclick="pause('rider')" alt="Pause Rider">
+        </div>
+
+        <div class="song">
+            <img class="img-songs" src="../images/cover-adventure.png" alt="Adventure cover">
+            <p>K.K. Adventure</p>
+            <input id="adventurePlay" type="image" src="../images/play-button.png" onclick="play('adventure')"
+                alt="Play Adventure">
+            <input id="adventurePause" type="image" src="../images/pause.png" onclick="pause('adventure')"
+                alt="Pause Adventure">
+        </div>
+
+
+    </div>
+    <footer>
+        <p>© Sylvianne 2020</p>
+    </footer>
+
+</body>
+
+</html>

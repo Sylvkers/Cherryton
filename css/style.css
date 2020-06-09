@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url('../font/FinkHeavy.woff2') format('woff2'),
+        url('../font/FinkHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    color: #707070;
+}
+
+#index-body{
+    background-color: #C5F7FE;
+}
+
+#villager-body{
+    background-color: #FEF4D9;
+}
+
+#songs-body{
+    background-color: #E7F7BE;
+}
+
+header{
+    width: 100%;
+    height: 430px;
+    background-position: center;
+    background-size: cover;
+}
+
+#index-header{
+    background-image: url("/images/header-home.jpg");
+}
+
+
+#villager-header{
+    background-image: url("/images/header-villagers.jpg");
+}
+
+#songs-header{
+    background-image: url("/images/header-songs.jpg");
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav a {
+    font-family: FinkHeavy;
+    font-size: 20px;
+    color: rgba(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgba(77, 77, 77, 0.3);
+}
+
+nav a:hover {
+    transition-duration: 1s;
+    background-color: rgba(77, 77, 77, 0.5);
+}
+
+h1 {
+    font-family: FinkHeavy;
+    font-size: 180px;
+    text-align: center;
+    margin: 30px;
+}
+
+h2 {
+    margin: 0;
+    font-family: FinkHeavy;    
+    padding: 10px 30px 10px 30px;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 30px 0px 30px;
+}
+
+#villagers, #villagers-info, #index-icons {
+    margin: 40px auto 10px auto;
+    align-content: center;
+    max-width: 1410px;
+    display: grid;
+}
+
+#index-icons{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#villagers-info {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 90px;
+}
+
+
+.round{
+    border-radius: 50%;
+}
+
+.round, .link{
+    padding: 10px;
+  }
+
+img, .link{
+    margin: auto;
+}
+
+
+.img-songs{
+    margin-top: 50px;
+}
+
+
+.link:hover{
+    transition-duration: 0.5s;
+    opacity: 0.7;
+ } 
+
+ .date {
+    text-align: right;
+    padding: 0;
+    padding: 0px 30px 0px 30px;
+}
+
+#diary {
+    max-width: 1410px;
+    margin: 45px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.diaryImage{
+    float: right;
+    width: 100px;
+    border-radius: 0;
+    padding: 0px 30px 30px 0px;
+}
+
+.diaryImage:hover {
+    transition-duration: 0.5s;
+    transform: scale(4,4);
+  }
+
+.entry{
+    width: auto;
+    height: auto;
+    background-color: #FCF2B7;
+    box-shadow: 16px 16px 28px rgba(0, 0, 0, 0.26);
+}
+
+.info{
+    background-color: #FCC5A7;
+    max-width: 600px;
+    max-height: 600px;
+    box-shadow: 16px 16px 28px rgba(0, 0, 0, 0.26);
+    text-align: center;
+}
+
+.info p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    font-size: 38px;
+}
+
+.song{
+    width: 370px;
+    height: 560px;
+    background-color: #FFFCF5;
+    border-radius: 79px;
+    text-align:center;
+    margin: auto;
+}
+
+#songs{
+    margin: 40px auto 0 auto;
+    align-content: center;
+    max-width: 1410px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+input{
+    margin-top: 5px;
+}
+
+#dixiePause, #riderPause, #adventurePause{
+    display: none;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer p{
+    padding: 10px;
+}
+
+@media (max-width:1180px){
+    #songs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:900px){
+    h1 {
+        font-size: 100px;
+    }
+
+    nav {
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    #diary {
+        grid-template-columns: 1fr;
+        max-width: 658px;
+    }
+
+    #villagers-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info{
+        margin: auto;
+        width: 100%;
+    }
+
+    #songs{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 618px){
+    h1 {
+        font-size: 80px;
+    }
+    nav{
+        grid-template-columns: 120px 120px 120px;
+    }
+
+    .round {
+        width: 100px;
+    }
+}
+
